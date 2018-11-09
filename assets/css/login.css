@@ -1,0 +1,13 @@
+.form-login {
+    display: flex;
+
+
+    flex-direction: column;
+    background-color: white;
+
+    margin-top: 10%;
+}
+
+body {
+    background-color: whitesmoke;
+}
