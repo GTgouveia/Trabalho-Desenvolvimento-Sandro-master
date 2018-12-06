@@ -1,7 +1,8 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Menu</title>
+  <title>Ordem de Serviço</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -39,6 +40,9 @@
       }
       .row.content {height:auto;} 
     }
+    #color{
+      border-color: red;
+    }
   </style>
 </head>
 <body>
@@ -51,12 +55,13 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#"><img src="assets/imgs/Logo1.png" height="200%" ></a>
+      <a class="navbar-brand" href="#">Empresa</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="active"><a href="menu.php">Home</a></li>
-        <li class="dropdown">
+        
+       <li class="dropdown">
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Cadastros<span class="caret"></span></a>
         <ul class="dropdown-menu">
           <li><a href="cadastroCliente.php">Clientes</a></li>
@@ -90,8 +95,68 @@
     <div class="col-sm-2 sidenav">
     </div>
     <div class="col-sm-8 text-left"> 
-      <h1>Estatisticas dos alugueis. MESA/CADEIRAS/AMBOS(CONJUNTO)</h1>
-      <hr>
+      <h1 align="center">Ordem de Serviço</h1>
+      <br/>
+      <form class="form-horizontal" action="/action_page.php">
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="nome_cliente">Nome do Cliente:</label>
+    <div class="col-sm-10"> 
+      <input type="text" class="form-control" id="nome_cliente" placeholder="Infome o nome do cliente">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="cli_endRua">Endereço:</label>
+    <div class="col-sm-10"> 
+      <input type="text" class="form-control" id="cli_endRua" placeholder="Informe o endereço">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="cli_endComplemento">Complemento:</label>
+    <div class="col-sm-10"> 
+      <input type="text" class="form-control" id="cli_endComplemento" placeholder="Complemento">
+    </div>
+  </div><div class="form-group">
+    <label class="control-label col-sm-2" for="cli_endBairro">Bairro:</label>
+    <div class="col-sm-10"> 
+      <input type="text" class="form-control" id="cli_endBairro" placeholder="Informe o bairro">
+    </div>
+  </div>
+  
+  
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="cli_endCEP">CEP:</label>
+    <div class="col-sm-10"> 
+      <input type="text" class="form-control" id="cli_endCEP" placeholder="Informe o CEP">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="cli_endNum">Numero de telefone:</label>
+    <div class="col-sm-10"> 
+      <input type="text" class="form-control" id="cli_endNum" placeholder="Informe o numero da residencia">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="cli_telefone">Telefone :</label>
+    <div class="col-sm-10"> 
+      <input type="number" class="form-control" id="cli_telefone" placeholder="Informe o telefone">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="cli_desc_problema">Descrição do Problema :</label>
+    <div class="col-sm-10"> 
+      <input type="number" class="form-control" id="cli_desc_problema" placeholder="Informe o problema">
+    </div>
+  </div>
+  <br/>
+  <div class="form-group"> 
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-default">SOLICITAR</button>
+    </div>
+  </div>
+</form>
     </div>
     <div class="col-sm-2 sidenav">
       

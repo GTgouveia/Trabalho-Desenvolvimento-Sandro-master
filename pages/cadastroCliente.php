@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Cadastro Clientes</title>
+  <title>Menu</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -60,8 +60,10 @@
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Cadastros<span class="caret"></span></a>
         <ul class="dropdown-menu">
           <li><a href="cadastroCliente.php">Clientes</a></li>
+          <li><a href="#">Usuarios</a></li>
           <li><a href="produtos.php">Produtos</a></li>
         </ul>
+<<<<<<< HEAD:cadastroCliente.php
       </li> 
        <li class="dropdown">
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Ordem de Serviço<span class="caret"></span></a>
@@ -69,12 +71,11 @@
           <li><a href="OS.php">O.S</a></li>
         </ul>
       </li>   
-        <li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Aluguel<span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><a href="aluguel.php">Alugar</a></li>
-        </ul>
-      </li>   
+=======
+      </li>
+        <li><a href="#">Projects</a></li>
+>>>>>>> 8339404944112adadb9208188075a5bdb80c43e0:pages/cadastroCliente.php
+        <li><a href="#">Contact</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
@@ -88,11 +89,10 @@
     <div class="col-sm-2 sidenav">
     </div>
     <div class="col-sm-8 text-left"> 
-      <h1 align="center">Cadastro de Clientes</h1>
       <br/>
-      <form class="form-horizontal" action="/action_page.php">
+  <form class="form-horizontal" action="fazCadastroCliente.php" method="post">
   <div class="form-group">
-    <label class="control-label col-sm-2" for="">Nome Completo:</label>
+    <label class="control-label col-sm-2" for="cli_nome">Nome Completo:</label>
     <div class="col-sm-10"> 
       <input type="text" class="form-control" id="cli_nome" placeholder="Infome seu nome completo">
     </div>
@@ -132,7 +132,7 @@
   <div class="form-group">
     <label class="control-label col-sm-2" for="cli_email">Email:</label>
     <div class="col-sm-10">
-      <input type="email" class="form-control" id="cli_email" placeholder="Informe o email">
+      <input type="text" class="form-control" id="cli_email" placeholder="Informe o email">
     </div>
   </div>
   <div class="form-group">
@@ -140,6 +140,15 @@
     <div class="col-sm-10"> 
       <input type="number" class="form-control" id="cli_telefone" placeholder="Informe o telefone">
     </div>
+  </div>
+  <div class="form-group">
+    	<label class="control-label col-sm-2" for="cli_telefone">Loja :</label>
+      <div class="col-sm-10"> 
+      <select class="form-control" id="loj_Codigo">
+        <option>1</option>
+        <!-- CASO TENHA MAIS LOJAS, DEVE FAZER O SELECT NA TABELA DE LOJAS. -->
+      </select>
+      </div>
   </div>
   <div class="form-group"> 
     <div class="col-sm-offset-2 col-sm-10">
@@ -150,7 +159,7 @@
   </div>
   <div class="form-group"> 
     <div class="col-sm-offset-2 col-sm-10">
-      <button type="submit" class="btn btn-default">Cadastrar</button>
+      <input type="submit" class="btn btn-default" value="Cadastrar">
     </div>
   </div>
 </form>
@@ -167,3 +176,4 @@
 
 </body>
 </html>
+

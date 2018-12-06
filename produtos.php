@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Menu</title>
+  <title>Cadastro Produtos</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -51,11 +51,12 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#"><img src="assets/imgs/Logo1.png" height="200%" ></a>
+      <a class="navbar-brand" href="#">Empresa</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="active"><a href="menu.php">Home</a></li>
+        
         <li class="dropdown">
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Cadastros<span class="caret"></span></a>
         <ul class="dropdown-menu">
@@ -77,6 +78,7 @@
           <li><a href="aluguel.php">Alugar</a></li>
         </ul>
       </li> 
+
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
@@ -90,8 +92,35 @@
     <div class="col-sm-2 sidenav">
     </div>
     <div class="col-sm-8 text-left"> 
-      <h1>Estatisticas dos alugueis. MESA/CADEIRAS/AMBOS(CONJUNTO)</h1>
-      <hr>
+      <h1 align="center">Cadastro dos Produtos</h1>
+      <br/>
+      <form class="form-horizontal" action="/action_page.php">
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="">Informe o produto:</label>
+    <div class="col-sm-10"> 
+        <select id="produto_tipo">
+          <option value="" ></option>
+          <option value="mesa" >Mesa</option>
+          <option value="cadeira" selected="selected" >Cadeira</option>
+        </select>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="control-label col-sm-2" for="quantidadeProd">Quantidade:</label>
+    <div class="col-sm-10"> 
+      <input type="number" class="form-control" id="quantidadeProd" placeholder="Informe a quantidade">
+    </div>
+  </div>
+
+  
+  
+  <div class="form-group"> 
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-default">Cadastrar</button>
+    </div>
+  </div>
+</form>
     </div>
     <div class="col-sm-2 sidenav">
       

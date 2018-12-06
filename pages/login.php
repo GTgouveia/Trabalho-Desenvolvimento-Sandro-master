@@ -19,18 +19,18 @@
 								<a href="login.php" 
 								class="waves-effect waves-light btn" 
 								style="background-color:#4b4b4b;">
-								Entrar 
+								Entrar
 								</a>
 							</li>
 						</ul>
 					</div>
         </nav>
 
-				<form class="form-login">
+				<form action="validaLogin.php" method="get" class="form-login">
 					<div class="row">
 						<div class="col s12">
 							<div class="input-field inline">
-								<input id="email_inline" type="email" class="validate">
+								<input id="login" name="login" type="text">
 								<label for="email_inline">Email</label>
 								<span class="helper-text" data-error="wrong" data-success="right"></span>
 							</div>
@@ -40,16 +40,14 @@
 				  <div class="row">
 						<div class="input-field col s12">
 						<div class="input-field inline">
-							<input id="password" type="password" class="validate">
+							<input id="senha" name="senha" type="password" class="validate">
 							<label for="password">Senha</label>
 							</div>
 						</div>
      		 	</div>
-
 					<a class="waves-effect waves-light btn">Login</a>
-
+					<input type="submit" value="Entrar">
 				</form>
-
 
 			<script type="text/javascript" src="../assets/js/index.js"></script>
       <script type="text/javascript" src="../assets/js/materialize.min.js"></script>
